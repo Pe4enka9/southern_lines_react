@@ -1,0 +1,23 @@
+.why-us-item {
+  width: 25rem;
+  height: 20rem;
+
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $secondary;
+
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+
+  h3 {
+    color: $text;
+
+    text-align: center;
+  }
+}

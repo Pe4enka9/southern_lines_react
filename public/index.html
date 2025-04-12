@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Южные линии</title>
+</head>
+<body>
+
+<div id="application-container" class="modal-container">
+    <form id="application" class="modal">
+        <h2>Заявка</h2>
+
+        <div class="input-container">
+            <label for="first_name">Имя <sup>*</sup></label>
+            <input type="text" name="first_name" id="first_name" placeholder="Иван">
+        </div>
+
+        <div class="input-container">
+            <label for="patronymic">Отчество</label>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Иванович">
+        </div>
+
+        <div class="input-container">
+            <label for="phone_number">Номер телефона <sup>*</sup></label>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="+7 (999) 999-99-99">
+        </div>
+
+        <div class="input-container">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment"></textarea>
+        </div>
+
+        <div class="input-container">
+            <label for="from">Откуда <sup>*</sup></label>
+            <select name="from" id="from" required>
+                <option value="" selected hidden>Выбрать</option>
+                <option value="sochi">Сочи</option>
+                <option value="rostov-on-Don">Ростов-на-Дону</option>
+                <option value="krasnodar">Краснодар</option>
+                <option value="anapa">Анапа</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="to">Куда <sup>*</sup></label>
+            <select name="to" id="to" required>
+                <option value="" selected hidden>Выбрать</option>
+                <option value="sochi">Сочи</option>
+                <option value="rostov-on-Don">Ростов-на-Дону</option>
+                <option value="krasnodar">Краснодар</option>
+                <option value="anapa">Анапа</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="service">Услуга <sup>*</sup></label>
+            <select name="service" id="service" required>
+                <option value="" selected hidden>Выберите услугу</option>
+                <option value="intercity_transport">Междугородние перевозки</option>
+                <option value="home_moving">Домашние переезды</option>
+                <option value="material_transport">Перевозки материалов</option>
+                <option value="consumer_goods">Товары народного производства (ТМП)</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="cargo_type">Тип груза <sup>*</sup></label>
+            <select name="cargo_type" id="cargo_type" required>
+                <option value="" selected hidden>Выберите тип груза</option>
+                <option value="oversize">Крупногабаритный</option>
+                <option value="fragile">Хрупкий</option>
+                <option value="heavy">Большая масса</option>
+                <option value="long">Длинномерные</option>
+                <option value="non_standard">Негабаритные</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label for="delivery_date">Дата доставки <sup>*</sup></label>
+            <input type="date" name="delivery_date" id="delivery_date">
+        </div>
+
+        <div class="input-container">
+            <label for="additional_service">Доп. услуга</label>
+            <select name="additional_service" id="additional_service">
+                <option value="" selected hidden>Выбрать доп. услугу</option>
+                <option value="loader">Грузчик</option>
+                <option value="palletizing">Паллетирование</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn">Отправить</button>
+    </form>
+</div>
+
+<div class="container">
+    <header class="mb-5">
+        <a href="index.html" class="logo">
+            <div class="img-logo">
+                <img src="img/logo.png" alt="Логотип">
+            </div>
+
+            <h1>Южные линии</h1>
+        </a>
+
+        <nav>
+            <a href="#" class="btn">Услуги</a>
+            <a href="#" class="btn">Цены</a>
+        </nav>
+
+        <div class="contacts">
+            <a href="https://api.whatsapp.com/send?phone=+79235907071" target="_blank" class="img-container">
+                <img src="img/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+
+            <a href="tel:+79237777777">+7 (923) 777-77-77</a>
+            <a href="mailto:maksg543@gmail.com">maksg543@gmail.com</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner mb-5">
+            <img src="img/banner.png" alt="Газель">
+
+            <div class="slogan">
+                <h1>Ваш груз — моя забота.<br>Доставлю без срока!</h1>
+
+                <button type="button" class="btn">Оставить заявку</button>
+            </div>
+        </section>
+
+        <section class="steps mb-5">
+            <h2 class="mb-2">Этапы доставки</h2>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="img-container">
+                        <img src="img/icons/documents.svg" alt="Документы">
+                    </div>
+
+                    <h3>1. Подготовка</h3>
+
+                    <p>Обговорим детали заказа по телефону или онлайн заявкой</p>
+                </div>
+
+                <img src="img/icons/arrow.svg" alt="Стрелка">
+
+                <div class="step">
+                    <div class="img-container">
+                        <img src="img/icons/truck_loading.svg" alt="Загрузка">
+                    </div>
+
+                    <h3>2. Загрузка</h3>
+
+                    <p>- Грузим товар в машину<br>- Проверяем, чтобы все было закреплено.</p>
+                </div>
+
+                <img src="img/icons/arrow.svg" alt="Стрелка">
+
+                <div class="step">
+                    <div class="img-container">
+                        <img src="img/icons/delivery.svg" alt="Доставка">
+                    </div>
+
+                    <h3>3. Доставка</h3>
+
+                    <p>Везём груз по выбранному маршруту</p>
+                </div>
+
+                <img src="img/icons/arrow.svg" alt="Стрелка">
+
+                <div class="step">
+                    <div class="img-container">
+                        <img src="img/icons/boxes.svg" alt="Разгрузка">
+                    </div>
+
+                    <h3>4. Разгрузка</h3>
+
+                    <p>Прибываем на место и производим разгрузку</p>
+                </div>
+
+                <img src="img/icons/arrow.svg" alt="Стрелка">
+
+                <div class="step">
+                    <div class="img-container">
+                        <img src="img/icons/document.svg" alt="Завершение">
+                    </div>
+
+                    <h3>5. Завершение</h3>
+
+                    <p>Доставка окончена</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us mb-5">
+            <h2 class="mb-2">Почему стоит обратиться к нам?</h2>
+
+            <div class="why-us-container">
+                <div class="why-us-item">
+                    <div class="img-container">
+                        <img src="img/icons/credit_card.svg" alt="Кредитные карты">
+                    </div>
+
+                    <h3>Все виды оплаты</h3>
+                </div>
+
+                <div class="why-us-item">
+                    <div class="img-container">
+                        <img src="img/icons/ruble.svg" alt="Рубль">
+                    </div>
+
+                    <h3>Прозрачные, выгодные цены</h3>
+                </div>
+
+                <div class="why-us-item">
+                    <div class="img-container">
+                        <img src="img/icons/truck.svg" alt="Газель">
+                    </div>
+
+                    <h3>Собственный транспорт</h3>
+                </div>
+
+                <div class="why-us-item">
+                    <div class="img-container">
+                        <img src="img/icons/employee.svg" alt="Сотрудник">
+                    </div>
+
+                    <h3>Квалифицированный сотрудник</h3>
+                </div>
+
+                <div class="why-us-item">
+                    <div class="img-container">
+                        <img src="img/icons/shield.svg" alt="Защита">
+                    </div>
+
+                    <h3>Гарантия безопасности груза</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="services mb-5">
+            <h2 class="mb-2">Услуги</h2>
+
+            <div class="services-container">
+                <div class="service">
+                    <h3>Виды погрузок:</h3>
+
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <p>Верх</p>
+                            </li>
+                            <li>
+                                <p>Бок</p>
+                            </li>
+                            <li>
+                                <p>Зад</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="header">
+                        <h3>Перевозки</h3>
+                        <h3>Отдельной машиной</h3>
+                        <h3>Попутный груз</h3>
+                    </div>
+
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <p>Междугородние перевозки</p>
+                            </li>
+                            <li>
+                                <p>Домашние переезды</p>
+                            </li>
+                            <li>
+                                <p>Перевозки материалов</p>
+                            </li>
+                            <li>
+                                <p>Товары народного производства (ТМП)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <h3>Доп. услуги</h3>
+
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <p>Грузчик</p>
+                            </li>
+                            <li>
+                                <p>Паллетирование</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me mb-5">
+            <h2 class="mb-2">Кратко обо мне</h2>
+
+            <div class="about-me-container">
+                <div class="img-container">
+                    <img src="img/leader.jpg" alt="Фото руководителя">
+                </div>
+
+                <p>Меня зовут Виталий, я предприниматель в сфере грузоперевозок. Управляю Газелью лично, гарантируя
+                    надежность и профессионализм на каждом этапе. Специализируюсь на перевозке любых грузов — от
+                    переездов до строительных материалов и оборудования. Многолетний опыт работы позволяет мне уверенно
+                    справляться с любыми задачами и гарантировать пунктуальность доставки. Я предлагаю индивидуальный
+                    подход: уточняю детали заказа, помогаю с погрузкой и разгрузкой при необходимости. Прозрачные и
+                    доступные цены оговариваются заранее, без скрытых платежей. Качество и своевременность выполнения
+                    заказов — мои главные приоритеты.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="info">
+            <a href="index.html" class="logo">
+                <div class="img-logo">
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+
+                <h1>Южные линии</h1>
+            </a>
+
+            <div class="contacts">
+                <a href="https://api.whatsapp.com/send?phone=+79235907071" target="_blank" class="img-container">
+                    <img src="img/icons/whatsapp.svg" alt="WhatsApp">
+                </a>
+
+                <a href="tel:+79237777777">+7 (923) 777-77-77</a>
+                <a href="mailto:maksg543@gmail.com">maksg543@gmail.com</a>
+            </div>
+
+            <p>Цены на сайте не являются публичной офертой</p>
+        </div>
+
+        <div class="avito">
+            <h1>Независимые отзывы</h1>
+
+            <a href="https://www.avito.ru/user/74fce72075e1a46fae7c0a91802f7f30/profile?src=sharing" target="_blank">
+                <img src="img/icons/avito.svg" alt="Авито">
+            </a>
+        </div>
+
+        <nav>
+            <a href="#" class="btn">Услуги</a>
+            <a href="#" class="btn">Цены</a>
+            <a href="#" class="btn">Калькулятор</a>
+        </nav>
+    </footer>
+</div>
+
+</body>
+</html>

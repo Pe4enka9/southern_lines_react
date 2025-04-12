@@ -1,0 +1,26 @@
+.steps {
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $main;
+
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+
+  h2 {
+    color: $text2;
+  }
+
+  .steps-container {
+    display: flex;
+    align-items: stretch;
+
+    & > img:nth-of-type(even) {
+      transform: rotate(180deg) scale(-1, 1);
+    }
+  }
+}
