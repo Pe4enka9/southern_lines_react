@@ -18,6 +18,10 @@ export default function Modal({isVisible, setIsVisible, API_URL}) {
             .catch(err => console.error(err));
     }, [API_URL]);
 
+    useEffect(() => {
+        isVisible ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible';
+    }, [isVisible]);
+
     const handleClose = () => {
         setIsVisible(false);
     };
