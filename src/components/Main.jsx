@@ -11,8 +11,9 @@ import truck from "../img/icons/truck.svg";
 import employee from "../img/icons/employee.svg";
 import shield from "../img/icons/shield.svg";
 import leader from "../img/leader.jpg";
+import Calculator from "./Calculator.jsx";
 
-export default function Main({setIsVisible}) {
+export default function Main({setIsVisible, API_URL}) {
     const handleOpen = () => {
         setIsVisible(true);
     };
@@ -225,6 +226,8 @@ export default function Main({setIsVisible}) {
                         заказов — мои главные приоритеты.</p>
                 </div>
             </section>
+
+            <Calculator API_URL={API_URL}/>
         </>
     )
 }

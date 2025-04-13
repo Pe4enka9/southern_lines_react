@@ -419,6 +419,20 @@ form textarea {
   resize: vertical;
 }
 
+.calculator {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #759FBC;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+.calculator form {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;

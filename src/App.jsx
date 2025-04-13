@@ -16,7 +16,7 @@ export default function App() {
                 <Header/>
 
                 <main>
-                    <Main setIsVisible={setIsVisible}/>
+                    <Main setIsVisible={setIsVisible} API_URL={API_URL}/>
                 </main>
 
                 <Footer/>
