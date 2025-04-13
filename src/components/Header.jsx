@@ -1,5 +1,7 @@
 import logo from '../img/logo.png';
 import whatsapp from '../img/icons/whatsapp.svg';
+import phone from '../img/icons/phone.svg';
+import email from '../img/icons/email.svg';
 
 export default function Header() {
     return (
@@ -8,8 +10,6 @@ export default function Header() {
                 <div className="img-logo">
                     <img src={logo || ''} alt="Логотип"/>
                 </div>
-
-                {/*<h1>Южные линии</h1>*/}
             </div>
 
             <nav>
@@ -22,8 +22,15 @@ export default function Header() {
                     <img src={whatsapp || ''} alt="WhatsApp"/>
                 </a>
 
-                <a href="tel:+79237777777">+7 (923) 777-77-77</a>
-                <a href="mailto:maksg543@gmail.com">maksg543@gmail.com</a>
+                <a href="tel:+79237777777" id="phone" className="img-container">
+                    <img src={phone || ''} alt="Телефон"/>
+                    <span>+7 (923) 777-77-77</span>
+                </a>
+
+                <a href="mailto:maksg543@gmail.com" id="email" className="img-container">
+                    <img src={email || ''} alt="Эл. почта"/>
+                    <span>maksg543@gmail.com</span>
+                </a>
             </div>
         </header>
     )

@@ -1,6 +1,8 @@
 import logo from '../img/logo.png';
 import whatsapp from '../img/icons/whatsapp.svg';
 import avito from '../img/icons/avito.svg';
+import phone from "../img/icons/phone.svg";
+import email from "../img/icons/email.svg";
 
 export default function Footer() {
     return (
@@ -13,19 +15,26 @@ export default function Footer() {
                         </div>
 
                         <div className="contacts">
-                            <div>
-                                <a href="https://api.whatsapp.com/send?phone=+79235907071" target="_blank"
-                                   className="img-container">
-                                    <img src={whatsapp || ''} alt="WhatsApp"/>
-                                </a>
+                            <div className="contacts-container">
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=+79235907071" target="_blank"
+                                       className="img-container">
+                                        <img src={whatsapp || ''} alt="WhatsApp"/>
+                                    </a>
 
-                                <a href="tel:+79237777777">+7 (923) 777-77-77</a>
+                                    <a href="tel:+79237777777" id="phone" className="img-container">
+                                        <img src={phone || ''} alt="Телефон"/>
+                                        <span>+7 (923) 777-77-77</span>
+                                    </a>
+                                </div>
+
+                                <a href="mailto:maksg543@gmail.com" id="email" className="img-container">
+                                    <img src={email || ''} alt="Эл. почта"/>
+                                    <span>maksg543@gmail.com</span>
+                                </a>
                             </div>
-                            <a href="mailto:maksg543@gmail.com">maksg543@gmail.com</a>
                         </div>
                     </div>
-
-                    {/*<h1>Южные линии</h1>*/}
                 </div>
 
                 <p>Цены на сайте не являются публичной офертой</p>

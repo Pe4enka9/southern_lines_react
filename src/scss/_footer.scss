@@ -11,12 +11,27 @@ footer {
   border-top-left-radius: $radius;
   border-top-right-radius: $radius;
 
+  @media (max-width: 400px) {
+    height: fit-content;
+
+    padding: 1.5rem;
+
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   .info {
     height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
 
     p {
       color: $text2;
@@ -33,6 +48,10 @@ footer {
       display: flex;
       align-items: center;
       gap: 3rem;
+
+      @media (max-width: 400px) {
+        justify-content: space-between;
+      }
     }
 
     .img-logo {
@@ -41,6 +60,10 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      
+      @media (max-width: 400px) {
+        height: 7rem;
+      }
 
       img {
         height: 100%;
@@ -60,11 +83,19 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    
+    @media (max-width: 400px) {
+      display: none;
+    }
 
     a {
       width: 100% !important;
 
       text-align: center;
+
+      @media (max-width: 400px) {
+        width: fit-content !important;
+      }
     }
   }
 
@@ -74,10 +105,38 @@ footer {
     align-items: center;
     gap: 2rem;
 
-    & > div {
+    @media (max-width: 400px) {
+      height: 2rem;
+    }
+
+    .contacts-container {
+      height: 100%;
+
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
+      
+      @media (max-width: 400px) {
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      & > div {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    #phone img, #email img {
+      display: none;
+
+      @media (max-width: 400px) {
+        display: inline;
+      }
     }
 
     .img-container {
@@ -86,6 +145,19 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        height: 100%;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        @media (max-width: 400px) {
+          display: none;
+        }
+      }
     }
 
     a {

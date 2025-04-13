@@ -44,7 +44,7 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>Обговорим детали заказа по телефону или онлайн заявкой</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка"/>
+                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
 
                     <div className="step">
                         <div className="img-container">
@@ -56,7 +56,7 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>- Грузим товар в машину<br/>- Проверяем, чтобы все было закреплено.</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка"/>
+                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
 
                     <div className="step">
                         <div className="img-container">
@@ -68,7 +68,7 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>Везём груз по выбранному маршруту</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка"/>
+                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
 
                     <div className="step">
                         <div className="img-container">
@@ -80,7 +80,7 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>Прибываем на место и производим разгрузку</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка"/>
+                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
 
                     <div className="step">
                         <div className="img-container">

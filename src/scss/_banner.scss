@@ -10,6 +10,18 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
+  
+  @media (max-width: 400px) {
+    padding: 3rem;
+
+    justify-content: center;
+  }
+  
+  @media (max-width: 400px) {
+    img {
+      display: none;
+    }
+  }
 
   .slogan {
     display: flex;
@@ -21,6 +33,10 @@
 
       font-size: 2.4rem;
       font-weight: 400;
+      
+      @media (max-width: 400px) {
+        text-align: center;
+      }
     }
 
     button {
