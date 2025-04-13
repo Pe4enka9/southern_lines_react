@@ -286,11 +286,19 @@ footer .logo {
   align-items: center;
   text-decoration: none;
 }
+footer .logo > div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
 footer .logo .img-logo {
-  height: 100%;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer .logo .img-logo img {
+  height: 100%;
 }
 footer .logo h1 {
   color: #2D3047;
@@ -309,8 +317,14 @@ footer nav a {
 }
 footer .contacts {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+footer .contacts > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 footer .contacts .img-container {
   height: 100%;

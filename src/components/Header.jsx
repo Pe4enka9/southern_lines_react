@@ -9,7 +9,7 @@ export default function Header() {
                     <img src={logo || ''} alt="Логотип"/>
                 </div>
 
-                <h1>Южные линии</h1>
+                {/*<h1>Южные линии</h1>*/}
             </div>
 
             <nav>
