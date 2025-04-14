@@ -24,18 +24,18 @@ export default function Header() {
                     <img src={whatsapp || ''} alt="Ссылка на WhatsApp для связи" title="Напишите нам в WhatsApp"/>
                 </a>
 
-                <a href="tel:+79237777777" id="phone" className="img-container"
-                   title="Позвоните нам по телефону +7 (923) 777-77-77">
+                <a href="tel:+79235907071" id="phone" className="img-container"
+                   title="Позвоните нам по телефону +7 (923) 590-70-71">
                     <img src={phone || ''} alt="Телефон для связи"
-                         title="Позвоните нам по телефону +7 (923) 777-77-77"/>
-                    <span>+7 (923) 777-77-77</span>
+                         title="Позвоните нам по телефону +7 (923) 590-70-71"/>
+                    <span>+7 (923) 590-70-71</span>
                 </a>
 
-                <a href="mailto:maksg543@gmail.com" id="email" className="img-container"
-                   title="Напишите нам на электронную почту maksg543@gmail.com">
+                <a href="mailto:southernline193@gmail.com" id="email" className="img-container"
+                   title="Напишите нам на электронную почту southernline193@gmail.com">
                     <img src={email || ''} alt="Электронная почта для связи"
-                         title="Напишите нам на электронную почту maksg543@gmail.com"/>
-                    <span>maksg543@gmail.com</span>
+                         title="Напишите нам на электронную почту southernline193@gmail.com"/>
+                    <span>southernline193@gmail.com</span>
                 </a>
             </div>
         </header>
