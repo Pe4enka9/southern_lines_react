@@ -1,8 +1,8 @@
 import logo from '../img/logo.png';
-import email from '../img/icons/email.svg';
 import Navigation from "./Navigation.jsx";
 import WhatsApp from "./WhatsApp.jsx";
 import PhoneNumber from "./PhoneNumber.jsx";
+import Email from "./Email.jsx";
 
 export default function Header() {
     return (
@@ -21,12 +21,7 @@ export default function Header() {
 
                 <PhoneNumber/>
 
-                <a href="mailto:southernline193@gmail.com" id="email" className="img-container"
-                   title="Напишите нам на электронную почту southernline193@gmail.com">
-                    <img src={email || ''} alt="Электронная почта для связи"
-                         title="Напишите нам на электронную почту southernline193@gmail.com"/>
-                    <span>southernline193@gmail.com</span>
-                </a>
+                <Email/>
             </div>
         </header>
     )
