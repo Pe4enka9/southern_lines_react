@@ -12,6 +12,7 @@ import employee from "../img/icons/employee.svg";
 import shield from "../img/icons/shield.svg";
 import leader from "../img/leader.jpg";
 import Calculator from "./Calculator.jsx";
+import Step from "./Step.jsx";
 
 export default function Main({setIsVisible, API_URL}) {
     const handleOpen = () => {
@@ -35,72 +36,42 @@ export default function Main({setIsVisible, API_URL}) {
                 <h2 className="mb-2">Этапы доставки</h2>
 
                 <div className="steps-container">
-                    <div className="step">
-                        <div className="img-container">
-                            <img src={documents || ''} alt="Подготовка документов для грузоперевозок"
-                                 title="Подготовка документов перед отправкой груза"/>
-                        </div>
-
-                        <h3>1. Подготовка</h3>
-
-                        <p>Обговорим детали заказа по телефону или онлайн заявкой</p>
-                    </div>
+                    <Step image={documents} imageAlt="Подготовка документов для грузоперевозок"
+                          imageTitle="Подготовка документов перед отправкой груза" title="1. Подготовка"
+                          description="Обговорим детали заказа по телефону или онлайн заявкой"/>
 
                     <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
                          title="Переход к следующему этапу доставки"/>
 
-                    <div className="step">
-                        <div className="img-container">
-                            <img src={truckLoading || ''} alt="Загрузка груза в Газель"
-                                 title="Загрузка груза в автомобиль для перевозки"/>
-                        </div>
-
-                        <h3>2. Загрузка</h3>
-
-                        <p>- Грузим товар в машину<br/>- Проверяем, чтобы все было закреплено.</p>
-                    </div>
+                    <Step image={truckLoading} imageAlt="Загрузка груза в Газель"
+                          imageTitle="Загрузка груза в автомобиль для перевозки" title="2. Загрузка"
+                          description={
+                              <>
+                                  - Грузим товар в машину<br/>
+                                  - Проверяем, чтобы все было закреплено.
+                              </>
+                          }/>
 
                     <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
                          title="Переход к следующему этапу доставки"/>
 
-                    <div className="step">
-                        <div className="img-container">
-                            <img src={delivery || ''} alt="Доставка грузов по России"
-                                 title="Доставка грузов по выбранному маршруту"/>
-                        </div>
-
-                        <h3>3. Доставка</h3>
-
-                        <p>Везём груз по выбранному маршруту</p>
-                    </div>
+                    <Step image={delivery} imageAlt="Доставка грузов по России"
+                          imageTitle="Доставка грузов по выбранному маршруту" title="3. Доставка"
+                          description="Везём груз по выбранному маршруту"/>
 
                     <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
                          title="Переход к следующему этапу доставки"/>
 
-                    <div className="step">
-                        <div className="img-container">
-                            <img src={boxes || ''} alt="Разгрузка груза на месте назначения"
-                                 title="Разгрузка груза по прибытию"/>
-                        </div>
-
-                        <h3>4. Разгрузка</h3>
-
-                        <p>Прибываем на место и производим разгрузку</p>
-                    </div>
+                    <Step image={boxes} imageAlt="Разгрузка груза на месте назначения"
+                          imageTitle="Разгрузка груза по прибытию" title="4. Разгрузка"
+                          description="Прибываем на место и производим разгрузку"/>
 
                     <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
                          title="Переход к следующему этапу доставки"/>
 
-                    <div className="step">
-                        <div className="img-container">
-                            <img src={document || ''} alt="Завершение доставки грузов"
-                                 title="Завершение доставки груза клиенту"/>
-                        </div>
-
-                        <h3>5. Завершение</h3>
-
-                        <p>Доставка окончена</p>
-                    </div>
+                    <Step image={document} imageAlt="Завершение доставки грузов"
+                          imageTitle="Завершение доставки груза клиенту" title="5. Завершение"
+                          description="Доставка окончена"/>
                 </div>
             </section>
 
