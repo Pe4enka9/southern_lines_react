@@ -1,6 +1,5 @@
 import banner from "../img/banner.png";
 import documents from "../img/icons/documents.svg";
-import arrow from "../img/icons/arrow.svg";
 import truckLoading from "../img/icons/truck_loading.svg";
 import delivery from "../img/icons/delivery.svg";
 import boxes from "../img/icons/boxes.svg";
@@ -14,6 +13,7 @@ import leader from "../img/leader.jpg";
 import Calculator from "./Calculator.jsx";
 import Step from "./Step.jsx";
 import StepArrow from "./StepArrow.jsx";
+import WhyUs from "./WhyUs.jsx";
 
 export default function Main({setIsVisible, API_URL}) {
     const handleOpen = () => {
@@ -76,50 +76,20 @@ export default function Main({setIsVisible, API_URL}) {
                 <h2 className="mb-2">Почему стоит обратиться к нам?</h2>
 
                 <div className="why-us-container">
-                    <div className="why-us-item">
-                        <div className="img-container">
-                            <img src={creditCard || ''} alt="Принимаем все виды оплаты за грузоперевозки"
-                                 title="Принимаем наличные и безналичные платежи"/>
-                        </div>
+                    <WhyUs image={creditCard} imageAlt="Принимаем все виды оплаты за грузоперевозки"
+                           imageTitle="Принимаем наличные и безналичные платежи" title="Все виды оплаты"/>
 
-                        <h3>Все виды оплаты</h3>
-                    </div>
+                    <WhyUs image={ruble} imageAlt="Прозрачные цены на грузоперевозки"
+                           imageTitle="Прозрачные и выгодные цены на перевозки" title="Прозрачные, выгодные цены"/>
 
-                    <div className="why-us-item">
-                        <div className="img-container">
-                            <img src={ruble || ''} alt="Прозрачные цены на грузоперевозки"
-                                 title="Прозрачные и выгодные цены на перевозки"/>
-                        </div>
+                    <WhyUs image={truck} imageAlt="Собственный транспорт для грузоперевозок"
+                           imageTitle="Собственный транспорт для перевозки грузов" title="Собственный транспорт"/>
 
-                        <h3>Прозрачные, выгодные цены</h3>
-                    </div>
+                    <WhyUs image={employee} imageAlt="Квалифицированный водитель для грузоперевозок"
+                           imageTitle="Опытный водитель с многолетним стажем" title="Квалифицированный сотрудник"/>
 
-                    <div className="why-us-item">
-                        <div className="img-container">
-                            <img src={truck || ''} alt="Собственный транспорт для грузоперевозок"
-                                 title="Собственный транспорт для перевозки грузов"/>
-                        </div>
-
-                        <h3>Собственный транспорт</h3>
-                    </div>
-
-                    <div className="why-us-item">
-                        <div className="img-container">
-                            <img src={employee || ''} alt="Квалифицированный водитель для грузоперевозок"
-                                 title="Опытный водитель с многолетним стажем"/>
-                        </div>
-
-                        <h3>Квалифицированный сотрудник</h3>
-                    </div>
-
-                    <div className="why-us-item">
-                        <div className="img-container">
-                            <img src={shield || ''} alt="Гарантия безопасности груза при перевозке"
-                                 title="Гарантия безопасности вашего груза"/>
-                        </div>
-
-                        <h3>Гарантия безопасности груза</h3>
-                    </div>
+                    <WhyUs image={shield} imageAlt="Гарантия безопасности груза при перевозке"
+                           imageTitle="Гарантия безопасности вашего груза" title="Гарантия безопасности груза"/>
                 </div>
             </section>
 
