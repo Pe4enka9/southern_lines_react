@@ -15,7 +15,7 @@ export default function Header() {
 
             <nav>
                 <a href="#services" className="btn" title="Перейти к разделу Услуги">Услуги</a>
-                <a href="#" className="btn" title="Перейти к разделу Цены">Цены</a>
+                {/*<a href="#" className="btn" title="Перейти к разделу Цены">Цены</a>*/}
             </nav>
 
             <div className="contacts">
