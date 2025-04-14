@@ -3,6 +3,7 @@ import whatsapp from '../img/icons/whatsapp.svg';
 import avito from '../img/icons/avito.svg';
 import phone from "../img/icons/phone.svg";
 import email from "../img/icons/email.svg";
+import Navigation from "./Navigation.jsx";
 
 export default function Footer() {
     return (
@@ -56,11 +57,7 @@ export default function Footer() {
                 </a>
             </div>
 
-            <nav>
-                <a href="#services" className="btn" title="Перейти к разделу Услуги">Услуги</a>
-                {/*<a href="#" className="btn" title="Перейти к разделу Цены">Цены</a>*/}
-                {/*<a href="#" className="btn">Калькулятор</a>*/}
-            </nav>
+            <Navigation/>
         </footer>
     )
 }

@@ -2,6 +2,7 @@ import logo from '../img/logo.png';
 import whatsapp from '../img/icons/whatsapp.svg';
 import phone from '../img/icons/phone.svg';
 import email from '../img/icons/email.svg';
+import Navigation from "./Navigation.jsx";
 
 export default function Header() {
     return (
@@ -13,10 +14,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <nav>
-                <a href="#services" className="btn" title="Перейти к разделу Услуги">Услуги</a>
-                {/*<a href="#" className="btn" title="Перейти к разделу Цены">Цены</a>*/}
-            </nav>
+            <Navigation/>
 
             <div className="contacts">
                 <a href="https://api.whatsapp.com/send?phone=+79235907071" target="_blank" className="img-container"
