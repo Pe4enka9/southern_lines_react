@@ -1,3 +1,4 @@
+import logoWebp from '../img/logo.webp';
 import logo from '../img/logo.png';
 import Navigation from "./Navigation.jsx";
 import WhatsApp from "./WhatsApp.jsx";
@@ -9,8 +10,11 @@ export default function Header() {
         <header className="mb-5">
             <div className="logo">
                 <div className="img-logo">
-                    <img src={logo || ''} alt="Логотип компании Южные линии"
-                         title="Южные линии - грузоперевозки по России"/>
+                    <picture>
+                        {logoWebp && <source srcSet={logoWebp} type="image/webp"/>}
+                        <img src={logo || ''} alt="Логотип компании Южные линии"
+                             title="Южные линии - грузоперевозки по России"/>
+                    </picture>
                 </div>
             </div>
 

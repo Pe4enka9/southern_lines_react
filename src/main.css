@@ -26,7 +26,7 @@ header .logo .img-logo {
   justify-content: center;
   align-items: center;
 }
-header .logo .img-logo img {
+header .logo .img-logo picture, header .logo .img-logo img {
   height: 100%;
 }
 header .logo h1 {
@@ -337,7 +337,7 @@ header .contacts a {
   border-radius: 1rem;
   overflow: hidden;
 }
-.about-me .about-me-container .img-container img {
+.about-me .about-me-container .img-container picture, .about-me .about-me-container .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -411,7 +411,7 @@ footer .logo .img-logo {
     height: 7rem;
   }
 }
-footer .logo .img-logo img {
+footer .logo .img-logo picture, footer .logo .img-logo img {
   height: 100%;
 }
 footer .logo h1 {

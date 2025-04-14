@@ -1,3 +1,4 @@
+import bannerWebp from "../img/banner.webp";
 import banner from "../img/banner.png";
 import documents from "../img/icons/documents.svg";
 import truckLoading from "../img/icons/truck_loading.svg";
@@ -9,6 +10,7 @@ import ruble from "../img/icons/ruble.svg";
 import truck from "../img/icons/truck.svg";
 import employee from "../img/icons/employee.svg";
 import shield from "../img/icons/shield.svg";
+import leaderWebp from "../img/leader.webp";
 import leader from "../img/leader.jpg";
 import Calculator from "./Calculator.jsx";
 import Step from "./Step.jsx";
@@ -24,8 +26,11 @@ export default function Main({setIsVisible, API_URL}) {
     return (
         <>
             <section className="banner mb-5">
-                <img src={banner || ''} alt="Газель для грузоперевозок по России"
-                     title="Грузоперевозки по России с Южными линиями"/>
+                <picture>
+                    {bannerWebp && <source srcSet={bannerWebp} type="image/webp"/>}
+                    <img src={banner || ''} alt="Газель для грузоперевозок по России"
+                         title="Грузоперевозки по России с Южными линиями"/>
+                </picture>
 
                 <div className="slogan">
                     <h1>Ваш груз — моя забота.<br/>Доставлю без срока!</h1>
@@ -112,8 +117,11 @@ export default function Main({setIsVisible, API_URL}) {
 
                 <div className="about-me-container">
                     <div className="img-container">
-                        <img src={leader || ''} alt="Фото Виталия - предпринимателя в сфере грузоперевозок"
-                             title="Виталий - владелец компании Южные линии"/>
+                        <picture>
+                            {leaderWebp && <source srcSet={leaderWebp} type="image/webp"/>}
+                            <img src={leader || ''} alt="Фото Виталия - предпринимателя в сфере грузоперевозок"
+                                 title="Виталий - владелец компании Южные линии"/>
+                        </picture>
                     </div>
 
                     <p>Меня зовут Виталий, я специализируюсь в сфере грузоперевозок. Управляю Газелью лично,

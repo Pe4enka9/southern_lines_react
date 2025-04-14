@@ -1,3 +1,4 @@
+import logoWebp from "../img/logo.webp";
 import logo from '../img/logo.png';
 import avito from '../img/icons/avito.svg';
 import Navigation from "./Navigation.jsx";
@@ -12,8 +13,11 @@ export default function Footer() {
                 <div className="logo">
                     <div>
                         <div className="img-logo">
-                            <img src={logo || ''} alt="Логотип компании Южные линии"
-                                 title="Южные линии - грузоперевозки по России"/>
+                            <picture>
+                                {logoWebp && <source srcSet={logoWebp} type="image/webp"/>}
+                                <img src={logo || ''} alt="Логотип компании Южные линии"
+                                     title="Южные линии - грузоперевозки по России"/>
+                            </picture>
                         </div>
 
                         <div className="contacts">
