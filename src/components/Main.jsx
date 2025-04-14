@@ -13,6 +13,7 @@ import shield from "../img/icons/shield.svg";
 import leader from "../img/leader.jpg";
 import Calculator from "./Calculator.jsx";
 import Step from "./Step.jsx";
+import StepArrow from "./StepArrow.jsx";
 
 export default function Main({setIsVisible, API_URL}) {
     const handleOpen = () => {
@@ -40,8 +41,7 @@ export default function Main({setIsVisible, API_URL}) {
                           imageTitle="Подготовка документов перед отправкой груза" title="1. Подготовка"
                           description="Обговорим детали заказа по телефону или онлайн заявкой"/>
 
-                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
-                         title="Переход к следующему этапу доставки"/>
+                    <StepArrow/>
 
                     <Step image={truckLoading} imageAlt="Загрузка груза в Газель"
                           imageTitle="Загрузка груза в автомобиль для перевозки" title="2. Загрузка"
@@ -52,22 +52,19 @@ export default function Main({setIsVisible, API_URL}) {
                               </>
                           }/>
 
-                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
-                         title="Переход к следующему этапу доставки"/>
+                    <StepArrow/>
 
                     <Step image={delivery} imageAlt="Доставка грузов по России"
                           imageTitle="Доставка грузов по выбранному маршруту" title="3. Доставка"
                           description="Везём груз по выбранному маршруту"/>
 
-                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
-                         title="Переход к следующему этапу доставки"/>
+                    <StepArrow/>
 
                     <Step image={boxes} imageAlt="Разгрузка груза на месте назначения"
                           imageTitle="Разгрузка груза по прибытию" title="4. Разгрузка"
                           description="Прибываем на место и производим разгрузку"/>
 
-                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
-                         title="Переход к следующему этапу доставки"/>
+                    <StepArrow/>
 
                     <Step image={document} imageAlt="Завершение доставки грузов"
                           imageTitle="Завершение доставки груза клиенту" title="5. Завершение"
