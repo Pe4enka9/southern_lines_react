@@ -14,6 +14,7 @@ import Calculator from "./Calculator.jsx";
 import Step from "./Step.jsx";
 import StepArrow from "./StepArrow.jsx";
 import WhyUs from "./WhyUs.jsx";
+import Service from "./Service.jsx";
 
 export default function Main({setIsVisible, API_URL}) {
     const handleOpen = () => {
@@ -97,63 +98,12 @@ export default function Main({setIsVisible, API_URL}) {
                 <h2 className="mb-2">Услуги</h2>
 
                 <div className="services-container">
-                    <div className="service">
-                        <h3>Виды погрузок:</h3>
+                    <Service title="Виды погрузок:" list={['Верх', 'Бок', 'Зад']}/>
 
-                        <div className="list">
-                            <ul>
-                                <li>
-                                    <p>Верх</p>
-                                </li>
-                                <li>
-                                    <p>Бок</p>
-                                </li>
-                                <li>
-                                    <p>Зад</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Service title={['Перевозки', 'Отдельной машиной', 'Попутный груз']}
+                             list={['Междугородние перевозки', 'Домашние переезды', 'Перевозки материалов', 'Товары народного производства (ТМП)']}/>
 
-                    <div className="service">
-                        <div className="header">
-                            <h3>Перевозки</h3>
-                            <h3>Отдельной машиной</h3>
-                            <h3>Попутный груз</h3>
-                        </div>
-
-                        <div className="list">
-                            <ul>
-                                <li>
-                                    <p>Междугородние перевозки</p>
-                                </li>
-                                <li>
-                                    <p>Домашние переезды</p>
-                                </li>
-                                <li>
-                                    <p>Перевозки материалов</p>
-                                </li>
-                                <li>
-                                    <p>Товары народного производства (ТМП)</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="service">
-                        <h3>Доп. услуги</h3>
-
-                        <div className="list">
-                            <ul>
-                                <li>
-                                    <p>Грузчик</p>
-                                </li>
-                                <li>
-                                    <p>Паллетирование</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Service title="Доп. услуги" list={['Грузчик', 'Паллетирование']}/>
                 </div>
             </section>
 
