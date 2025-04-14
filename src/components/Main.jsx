@@ -243,7 +243,7 @@ export default function Main({setIsVisible, API_URL}) {
                 </div>
             </section>
 
-            <Calculator API_URL={API_URL}/>
+            {/*<Calculator API_URL={API_URL}/>*/}
         </>
     )
 }
