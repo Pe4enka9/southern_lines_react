@@ -1,4 +1,4 @@
-import logoWebp from "../img/logo.webp";
+import logoWebp from "../img/webp/logo.webp";
 import logo from '../img/logo.png';
 import avito from '../img/icons/avito.svg';
 import Navigation from "./Navigation.jsx";

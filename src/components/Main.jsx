@@ -1,4 +1,4 @@
-import bannerWebp from "../img/banner.webp";
+import bannerWebp from "../img/webp/banner.webp";
 import banner from "../img/banner.png";
 import documents from "../img/icons/documents.svg";
 import truckLoading from "../img/icons/truck_loading.svg";
@@ -10,7 +10,7 @@ import ruble from "../img/icons/ruble.svg";
 import truck from "../img/icons/truck.svg";
 import employee from "../img/icons/employee.svg";
 import shield from "../img/icons/shield.svg";
-import leaderWebp from "../img/leader.webp";
+import leaderWebp from "../img/webp/leader.webp";
 import leader from "../img/leader.jpg";
 import Calculator from "./Calculator.jsx";
 import Step from "./Step.jsx";
