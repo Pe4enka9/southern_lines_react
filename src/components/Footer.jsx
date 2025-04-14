@@ -1,9 +1,9 @@
 import logo from '../img/logo.png';
 import avito from '../img/icons/avito.svg';
-import phone from "../img/icons/phone.svg";
 import email from "../img/icons/email.svg";
 import Navigation from "./Navigation.jsx";
 import WhatsApp from "./WhatsApp.jsx";
+import PhoneNumber from "./PhoneNumber.jsx";
 
 export default function Footer() {
     return (
@@ -21,12 +21,7 @@ export default function Footer() {
                                 <div>
                                     <WhatsApp/>
 
-                                    <a href="tel:+79235907071" id="phone" className="img-container"
-                                       title="Позвоните нам по телефону +7 (923) 590-70-71">
-                                        <img src={phone || ''} alt="Телефон для связи"
-                                             title="Позвоните нам по телефону +7 (923) 590-70-71"/>
-                                        <span>+7 (923) 590-70-71</span>
-                                    </a>
+                                    <PhoneNumber/>
                                 </div>
 
                                 <a href="mailto:southernline193@gmail.com" id="email" className="img-container"
