@@ -1,9 +1,9 @@
 import logo from '../img/logo.png';
-import whatsapp from '../img/icons/whatsapp.svg';
 import avito from '../img/icons/avito.svg';
 import phone from "../img/icons/phone.svg";
 import email from "../img/icons/email.svg";
 import Navigation from "./Navigation.jsx";
+import WhatsApp from "./WhatsApp.jsx";
 
 export default function Footer() {
     return (
@@ -19,11 +19,7 @@ export default function Footer() {
                         <div className="contacts">
                             <div className="contacts-container">
                                 <div>
-                                    <a href="https://api.whatsapp.com/send?phone=+79235907071" target="_blank"
-                                       className="img-container" title="Напишите нам в WhatsApp">
-                                        <img src={whatsapp || ''} alt="Ссылка на WhatsApp для связи"
-                                             title="Напишите нам в WhatsApp"/>
-                                    </a>
+                                    <WhatsApp/>
 
                                     <a href="tel:+79235907071" id="phone" className="img-container"
                                        title="Позвоните нам по телефону +7 (923) 590-70-71">
