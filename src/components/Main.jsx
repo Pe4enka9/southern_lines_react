@@ -21,7 +21,8 @@ export default function Main({setIsVisible, API_URL}) {
     return (
         <>
             <section className="banner mb-5">
-                <img src={banner || ''} alt="Газель"/>
+                <img src={banner || ''} alt="Газель для грузоперевозок по России"
+                     title="Грузоперевозки по России с Южными линиями"/>
 
                 <div className="slogan">
                     <h1>Ваш груз — моя забота.<br/>Доставлю без срока!</h1>
@@ -36,7 +37,8 @@ export default function Main({setIsVisible, API_URL}) {
                 <div className="steps-container">
                     <div className="step">
                         <div className="img-container">
-                            <img src={documents || ''} alt="Документы"/>
+                            <img src={documents || ''} alt="Подготовка документов для грузоперевозок"
+                                 title="Подготовка документов перед отправкой груза"/>
                         </div>
 
                         <h3>1. Подготовка</h3>
@@ -44,11 +46,13 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>Обговорим детали заказа по телефону или онлайн заявкой</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
+                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
+                         title="Переход к следующему этапу доставки"/>
 
                     <div className="step">
                         <div className="img-container">
-                            <img src={truckLoading || ''} alt="Загрузка"/>
+                            <img src={truckLoading || ''} alt="Загрузка груза в Газель"
+                                 title="Загрузка груза в автомобиль для перевозки"/>
                         </div>
 
                         <h3>2. Загрузка</h3>
@@ -56,11 +60,13 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>- Грузим товар в машину<br/>- Проверяем, чтобы все было закреплено.</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
+                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
+                         title="Переход к следующему этапу доставки"/>
 
                     <div className="step">
                         <div className="img-container">
-                            <img src={delivery || ''} alt="Доставка"/>
+                            <img src={delivery || ''} alt="Доставка грузов по России"
+                                 title="Доставка грузов по выбранному маршруту"/>
                         </div>
 
                         <h3>3. Доставка</h3>
@@ -68,11 +74,13 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>Везём груз по выбранному маршруту</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
+                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
+                         title="Переход к следующему этапу доставки"/>
 
                     <div className="step">
                         <div className="img-container">
-                            <img src={boxes || ''} alt="Разгрузка"/>
+                            <img src={boxes || ''} alt="Разгрузка груза на месте назначения"
+                                 title="Разгрузка груза по прибытию"/>
                         </div>
 
                         <h3>4. Разгрузка</h3>
@@ -80,11 +88,13 @@ export default function Main({setIsVisible, API_URL}) {
                         <p>Прибываем на место и производим разгрузку</p>
                     </div>
 
-                    <img src={arrow || ''} alt="Стрелка" className="arrow"/>
+                    <img src={arrow || ''} alt="Стрелка, указывающая следующий этап" className="arrow"
+                         title="Переход к следующему этапу доставки"/>
 
                     <div className="step">
                         <div className="img-container">
-                            <img src={document || ''} alt="Завершение"/>
+                            <img src={document || ''} alt="Завершение доставки грузов"
+                                 title="Завершение доставки груза клиенту"/>
                         </div>
 
                         <h3>5. Завершение</h3>
@@ -100,7 +110,8 @@ export default function Main({setIsVisible, API_URL}) {
                 <div className="why-us-container">
                     <div className="why-us-item">
                         <div className="img-container">
-                            <img src={creditCard || ''} alt="Кредитные карты"/>
+                            <img src={creditCard || ''} alt="Принимаем все виды оплаты за грузоперевозки"
+                                 title="Принимаем наличные и безналичные платежи"/>
                         </div>
 
                         <h3>Все виды оплаты</h3>
@@ -108,7 +119,8 @@ export default function Main({setIsVisible, API_URL}) {
 
                     <div className="why-us-item">
                         <div className="img-container">
-                            <img src={ruble || ''} alt="Рубль"/>
+                            <img src={ruble || ''} alt="Прозрачные цены на грузоперевозки"
+                                 title="Прозрачные и выгодные цены на перевозки"/>
                         </div>
 
                         <h3>Прозрачные, выгодные цены</h3>
@@ -116,7 +128,8 @@ export default function Main({setIsVisible, API_URL}) {
 
                     <div className="why-us-item">
                         <div className="img-container">
-                            <img src={truck || ''} alt="Газель"/>
+                            <img src={truck || ''} alt="Собственный транспорт для грузоперевозок"
+                                 title="Собственный транспорт для перевозки грузов"/>
                         </div>
 
                         <h3>Собственный транспорт</h3>
@@ -124,7 +137,8 @@ export default function Main({setIsVisible, API_URL}) {
 
                     <div className="why-us-item">
                         <div className="img-container">
-                            <img src={employee || ''} alt="Сотрудник"/>
+                            <img src={employee || ''} alt="Квалифицированный водитель для грузоперевозок"
+                                 title="Опытный водитель с многолетним стажем"/>
                         </div>
 
                         <h3>Квалифицированный сотрудник</h3>
@@ -132,7 +146,8 @@ export default function Main({setIsVisible, API_URL}) {
 
                     <div className="why-us-item">
                         <div className="img-container">
-                            <img src={shield || ''} alt="Защита"/>
+                            <img src={shield || ''} alt="Гарантия безопасности груза при перевозке"
+                                 title="Гарантия безопасности вашего груза"/>
                         </div>
 
                         <h3>Гарантия безопасности груза</h3>
@@ -209,7 +224,8 @@ export default function Main({setIsVisible, API_URL}) {
 
                 <div className="about-me-container">
                     <div className="img-container">
-                        <img src={leader || ''} alt="Фото руководителя"/>
+                        <img src={leader || ''} alt="Фото Виталия - предпринимателя в сфере грузоперевозок"
+                             title="Виталий - владелец компании Южные линии"/>
                     </div>
 
                     <p>Меня зовут Виталий, я предприниматель в сфере грузоперевозок. Управляю Газелью лично,
