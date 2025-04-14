@@ -42,9 +42,13 @@
     }
 
     p {
-      color: $text;
+      color: $secondary;
 
       line-height: 2.5rem;
+
+      @media (max-width: 400px) {
+        font-size: 1.6rem;
+      }
     }
   }
 }

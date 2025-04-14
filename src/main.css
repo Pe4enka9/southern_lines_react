@@ -343,8 +343,13 @@ header .contacts a {
   object-fit: cover;
 }
 .about-me .about-me-container p {
-  color: #FDFDFD;
+  color: #2D3047;
   line-height: 2.5rem;
+}
+@media (max-width: 400px) {
+  .about-me .about-me-container p {
+    font-size: 1.6rem;
+  }
 }
 
 footer {
