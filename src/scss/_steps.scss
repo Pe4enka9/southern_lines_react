@@ -20,7 +20,8 @@
     align-items: stretch;
 
     @media (max-width: 400px) {
-      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 3rem;
 
       .arrow {

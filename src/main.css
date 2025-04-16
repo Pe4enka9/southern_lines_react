@@ -183,7 +183,8 @@ header .contacts a {
 }
 @media (max-width: 400px) {
   .steps .steps-container {
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
   }
   .steps .steps-container .arrow {
@@ -337,6 +338,12 @@ header .contacts a {
   border-radius: 1rem;
   overflow: hidden;
 }
+@media (max-width: 400px) {
+  .about-me .about-me-container .img-container {
+    width: 25rem;
+    height: 25rem;
+  }
+}
 .about-me .about-me-container .img-container picture, .about-me .about-me-container .img-container img {
   width: 100%;
   height: 100%;
@@ -348,7 +355,8 @@ header .contacts a {
 }
 @media (max-width: 400px) {
   .about-me .about-me-container p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 3.3rem;
   }
 }
 
