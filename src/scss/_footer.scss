@@ -11,7 +11,7 @@ footer {
   border-top-left-radius: $radius;
   border-top-right-radius: $radius;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     height: fit-content;
 
     padding: 1.5rem;
@@ -27,7 +27,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
@@ -49,7 +49,7 @@ footer {
       align-items: center;
       gap: 3rem;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         justify-content: space-between;
       }
     }
@@ -61,7 +61,7 @@ footer {
       justify-content: center;
       align-items: center;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         height: 7rem;
       }
 
@@ -84,7 +84,7 @@ footer {
     align-items: center;
     gap: 1.5rem;
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       display: none;
     }
 
@@ -93,7 +93,7 @@ footer {
 
       text-align: center;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         width: fit-content !important;
       }
     }
@@ -121,7 +121,7 @@ footer {
     align-items: center;
     gap: 2rem;
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       height: 2rem;
     }
 
@@ -133,7 +133,7 @@ footer {
       align-items: center;
       gap: 2rem;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         flex-direction: row;
         gap: 1rem;
       }
@@ -150,7 +150,7 @@ footer {
     #phone img, #email img {
       display: none;
 
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         display: inline;
       }
     }
@@ -170,7 +170,7 @@ footer {
         font-size: 1.4rem;
         font-weight: 400;
 
-        @media (max-width: 400px) {
+        @media (max-width: 450px) {
           display: none;
         }
       }

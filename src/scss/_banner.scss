@@ -11,13 +11,13 @@
   -moz-border-radius: $radius;
   border-radius: $radius;
   
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     padding: 3rem;
 
     justify-content: center;
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     img {
       display: none;
     }
@@ -34,7 +34,7 @@
       font-size: 2.4rem;
       font-weight: 400;
       
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         text-align: center;
       }
     }
