@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="avito">
                 <h1>Независимые отзывы</h1>
 
-                <a href="https://www.avito.ru/user/74fce72075e1a46fae7c0a91802f7f30/profile?src=sharing" target="_blank"
+                <a href="https://www.avito.ru/user/9bc97a3fa75e0197b7d289ac2008c706/profile?src=sharing" target="_blank"
                    title="Прочитайте независимые отзывы о нас на Авито">
                     <img src={avito || ''} alt="Отзывы о компании на Авито"
                          title="Прочитайте независимые отзывы о нас на Авито"/>
