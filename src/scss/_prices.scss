@@ -1,0 +1,40 @@
+.prices {
+  width: 22rem;
+  height: fit-content;
+
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  background-color: $secondary;
+
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s, transform .4s;
+
+  position: absolute;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  p {
+    padding: .5em;
+
+    color: $text;
+    background-color: $main;
+
+    -webkit-border-radius: $smallRadius;
+    -moz-border-radius: $smallRadius;
+    border-radius: $smallRadius;
+
+    text-align: center;
+  }
+}

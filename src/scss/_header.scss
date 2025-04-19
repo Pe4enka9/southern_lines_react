@@ -52,6 +52,20 @@ header {
     @media (max-width: 400px) {
       gap: 1.5rem;
     }
+
+    .price {
+      position: relative;
+
+      .prices {
+        top: calc(100% + 1rem);
+        left: 0;
+        transform: translate(-50%, -2.5rem);
+
+        &.active {
+          transform: translate(-50%, 0);
+        }
+      }
+    }
   }
 
   .contacts {

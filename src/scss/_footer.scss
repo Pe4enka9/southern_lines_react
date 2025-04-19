@@ -26,7 +26,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
     @media (max-width: 400px) {
       flex-direction: column;
       align-items: center;
@@ -60,7 +60,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
       @media (max-width: 400px) {
         height: 7rem;
       }
@@ -83,7 +83,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    
+
     @media (max-width: 400px) {
       display: none;
     }
@@ -95,6 +95,22 @@ footer {
 
       @media (max-width: 400px) {
         width: fit-content !important;
+      }
+    }
+
+    .price {
+      width: 100%;
+
+      position: relative;
+
+      .prices {
+        bottom: 50%;
+        right: calc(100% + 1rem);
+        transform: translate(2.5rem, 50%);
+
+        &.active {
+          transform: translate(0, 50%);
+        }
       }
     }
   }
@@ -116,7 +132,7 @@ footer {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      
+
       @media (max-width: 400px) {
         flex-direction: row;
         gap: 1rem;
